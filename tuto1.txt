@@ -2,4 +2,22 @@
 $ molecule init role acme.my_new_role --driver-name docker
 You should then see a my_new_role folder in your current directory.
 
-2- 
+2- Enter to my_new_role and execute molecule create
+$ cd my_new_role
+$ molecule create
+
+3- view created VM
+$ molecule list
+check with docker:
+$ docker ps
+
+4- Now, let’s add a task to our tasks/main.yml like so:
+
+- name: Molecule Hello World!
+  debug:
+    msg: Hello, World!
+
+5- We can then tell Molecule to test our role against our instance with:
+$ molecule converge
+
+ 
