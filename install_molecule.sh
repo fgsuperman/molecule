@@ -26,6 +26,6 @@ echo "--> Install ansible"
 sudo apt install -y ansible
 
 echo "--> install molecule"
-python3 -m pip install molecule ansible-core
+python3 -m pip install 'molecule[docker]' ansible-core
 
 

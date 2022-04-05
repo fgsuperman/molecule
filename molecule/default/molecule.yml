@@ -1,0 +1,8 @@
+---
+driver: 
+  name: docker
+platforms:
+  - name: ubuntu-18.04
+    image: ubuntu:bionic-20220315
+  - name: ubuntu-20.04
+    image: ubuntu:focal-20220316
