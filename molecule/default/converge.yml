@@ -4,3 +4,14 @@
   tasks:
     - name: install update
       command: apt update -y
+
+    - name: install git
+      apt:
+        name: git
+        state: present
+        update_cache: yes
+
+    - name: clone repo
+      ansible.builtin.git:
+        repo: https://github.com/fgsuperman/ansible-repo1.git
+        dest: /home/ansible
