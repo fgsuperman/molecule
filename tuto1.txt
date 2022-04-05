@@ -1,3 +1,6 @@
+tuto source:
+https://molecule.readthedocs.io/en/latest/getting-started.html#molecule-scenarios
+
 1- Generate a new role with Molecule, simply run:
 $ molecule init role acme.my_new_role --driver-name docker
 You should then see a my_new_role folder in your current directory.
@@ -19,5 +22,12 @@ $ docker ps
 
 5- We can then tell Molecule to test our role against our instance with:
 $ molecule converge
+
+6- If we want to manually inspect the instance afterwards, we can run:
+$ molecule login
+
+7- Finally, we can exit the instance and destroy it with:
+$ molecule destroy
+
 
  
