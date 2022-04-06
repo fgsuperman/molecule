@@ -19,12 +19,12 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 echo "--> add user to docker group"
 sudo usermod -aG docker $USER
-su $USER
+#su $USER
 
 #echo "--> Install ansible"
 #sudo apt install -y ansible
 #ansible-galaxy collection install community.docker
 #pip install -U "ansible<2.10"
 
-echo "--> install molecule"
+echo "--> install molecule and ansible"
 sudo python3 -m pip install 'molecule[docker]' ansible-core
