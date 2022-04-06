@@ -28,6 +28,6 @@ ansible-galaxy collection install community.docker
 pip install -U "ansible<2.10"
 
 echo "--> install molecule"
-python3 -m pip install 'molecule[docker]' ansible-core
+sudo python3 -m pip install 'molecule[docker]'
 
 
