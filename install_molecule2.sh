@@ -27,4 +27,4 @@ su $USER
 #pip install -U "ansible<2.10"
 
 echo "--> install molecule"
-sudo python3 -m pip install 'molecule[docker]'
+sudo python3 -m pip install 'molecule[docker]' ansible-core
