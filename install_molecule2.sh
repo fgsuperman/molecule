@@ -28,3 +28,4 @@ sudo usermod -aG docker $USER
 
 echo "--> install molecule and ansible"
 sudo python3 -m pip install 'molecule[docker]' ansible-core
+ansible-galaxy collection install community.docker
