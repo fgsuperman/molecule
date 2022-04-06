@@ -21,14 +21,9 @@ echo "--> add user to docker group"
 sudo usermod -aG docker $USER
 #su $USER
 
-#echo "--> Install ansible"
-#sudo apt install -y ansible
-#ansible-galaxy collection install community.docker
-#pip install -U "ansible<2.10"
-
 echo "--> install molecule and ansible"
 sudo python3 -m pip install 'molecule[docker]' ansible-core
 ansible-galaxy collection install community.docker
-
+echo "  *** INSTALLATION END **** \n"
 echo "--> relogin with user session ($USER)"
 su $USER
